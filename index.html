@@ -494,11 +494,11 @@ body.dark-mode .course-tab.active{background:var(--green-dark);border-color:#3d8
           </div>
           <div class="subject-arrow">›</div>
         </div>
-        <div class="subject-card programming" data-subject="prog1" data-has-db="false" onclick="selectSubject('prog1', 'Программирование 1', false)">
+        <div class="subject-card programming" data-subject="prog1" data-has-db="true" onclick="selectSubject('prog1', 'Программирование 1', true)">
           <div class="subject-icon">💻</div>
           <div class="subject-info">
             <h2>Программирование 1</h2>
-            <p>Основы программирования · Заглушка</p>
+            <p id="prog1-count">401 вопрос · C/C++, ООП, массивы, указатели</p>
           </div>
           <div class="subject-arrow">›</div>
         </div>
@@ -1118,7 +1118,7 @@ const DATA_REGISTRY = {
   'calculus': { stub: true },
   'calculus1': { stub: true },
   'physics1': { file: 'physics1.json', data: [] },
-  'prog1': { stub: true },
+  'prog1': { file: 'prog1.json', data: [] },
   'english1': { stub: true },
   'academic-writing': { stub: true },
   'modern-history': { stub: true },
